@@ -1,5 +1,8 @@
 package com.first.store;
 
+import org.springframework.stereotype.Service;
+
+@Service   //Annotation (Component [FOR UTILITY CLASSES], Service [alias for component, FOR BUISNESS CLASSES], Repository, Controller)
 public class OrderService {
     private  PaymentService paymentService;
     public OrderService(PaymentService paymentService){
